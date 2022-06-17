@@ -3,6 +3,8 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 50px;
+    width: 100%;
     
     .header__image{
         display: flex;
@@ -13,5 +15,6 @@ header{
 .logo{
     height: 25px;
 }
+
 
 }

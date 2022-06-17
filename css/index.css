@@ -1,0 +1,289 @@
+body, html {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+h6 {
+  font-family: "Shrikhand", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+h3 {
+  font-size: 0.9em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+}
+header .header__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logo {
+  height: 25px;
+}
+
+.foot {
+  height: 200px;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.foot__logo {
+  display: flex;
+  align-items: center;
+  height: 35%;
+}
+.foot__text {
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+  color: white;
+  gap: 5px;
+}
+.foot__text__sub {
+  display: flex;
+  flex-direction: row;
+}
+.foot__text__icon {
+  width: 25px;
+}
+.foot i {
+  font-size: 0.8em;
+}
+.foot h6 {
+  font-size: 1.1em;
+  color: white;
+}
+.foot a {
+  color: white;
+}
+
+.fnt {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  height: 300px;
+  width: 100%;
+}
+.fnt__title {
+  height: 10%;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+.fnt__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(90% - 15px);
+  width: 100%;
+  padding-left: 5px;
+}
+.fnt__box {
+  background-color: #f6f6f6;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.fnt__number {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #9356DC;
+  color: white;
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  margin: -10px;
+}
+.fnt .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+}
+.fnt__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 75%;
+}
+.fnt__icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.fnt i {
+  color: #7e7e7e;
+}
+
+.rst {
+  height: 950px;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-bottom: 40px solid #f6f6f6;
+}
+.rst__title {
+  height: 8%;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.rst__select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 92%;
+  gap: 15px;
+}
+.rst__select__box {
+  display: flex;
+  flex-direction: column;
+  height: calc(25% - 15px);
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.rst__select__image {
+  height: 70%;
+  width: 100%;
+}
+.rst__select__pics {
+  display: flex;
+  flex: 1;
+}
+.rst img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.rst__select__avis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30%;
+}
+.rst__select__text {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 10px);
+  margin-top: 10px;
+  padding-left: 10px;
+  gap: 5px;
+}
+.rst__select__text h3 {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0px;
+}
+.rst__select__text p {
+  margin: 0px;
+  font-size: 1em;
+}
+.rst__select__heart {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  width: auto;
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.exp__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #eaeaea;
+}
+.exp .search {
+  width: 100%;
+  border: none;
+  background-color: #eaeaea;
+  margin: 0px;
+  padding: 12px;
+}
+.exp input.text {
+  font-family: FontAwesome, "Roboto";
+  text-align: center;
+  font-weight: bold;
+}
+.exp__booking {
+  height: 220px;
+  width: 100%;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.exp__booking__h1 {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.exp__booking__p {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+.exp h1 {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+.exp p {
+  font-size: 1em;
+  text-align: center;
+}
+.exp__booking__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.exp button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  height: 35px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
+  border: none;
+  font-size: 0.7em;
+}
+
+/*# sourceMappingURL=index.css.map */

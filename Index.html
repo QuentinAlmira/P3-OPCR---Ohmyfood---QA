@@ -5,39 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>P3 - Ohmyfood</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="Mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   </head>
 
   <body>
-
+<!--Header  -->
   <header>
     <div class="header__image">
     <img class="logo" src="./images/logo/ohmyfood.png" alt="Ohmyfood.png" />
   </div>
   </header>
 
+
+
   <!--Section 1 - Explorer-->
 
-  <div id="section1-explorer">
+  <div class="exp">
     <div class="exp__heading">
-      <i class="fa-solid fa-location-dot"></i>
-      <input type="search" placeholder="Paris, Belleville" />
+      <form method="POST" action="#" id="recherche">
+        <input type="search" class="search text" placeholder="&#xf3c5; Paris, Belleville">
+    </form>
     </div>
     <div class="exp__booking">
+      <div class="exp__booking__h1">
       <h1>Réservez le menu qui vous convient</h1>
-      <h2>Découvrer des restaurants d'exexption, selectionés par nos soins</h2>
-
+</div>
+      
+      <div class="exp__booking__p">
+      <p>Découvrer des restaurants d'exexption, selectionés par nos soins</p>
+      </div>
       <div class="exp__booking__button">
       <button class="exp__button">Explorer nos restaurants</button>
       </div>
@@ -45,12 +49,15 @@
     </div>
   </div>
 
+ 
+
   <!--Section 2 - Fonctionnement-->
 
   <div class="fnt">
     <div class="fnt__title">
-      <h1>Fonctionnement</h1>
+      <h2>Fonctionnement</h2>
     </div>
+
 
     <div class="fnt__menu">
       <div class="fnt__box">
@@ -58,6 +65,7 @@
           <span class="number">1</span>
         </div>
 
+        
         <div class="fnt__icon">
           <i class="fa-solid fa-mobile-screen-button"></i>
         </div>
@@ -65,13 +73,14 @@
         <div class="fnt__text">
           <h3>Choisissez un restaurant</h3>
         </div>
-      </div>
+</div>
+
 
       <div class="fnt__box">
         <div class="fnt__number">
           <span class="number">2</span>
         </div>
-
+        
         <div class="fnt__icon">
           <i class="fa-solid fa-list"></i>
         </div>
@@ -79,6 +88,9 @@
         <div class="fnt__text">
           <h3>Composez votre menu</h3>
         </div>
+
+
+
       </div>
 
       <div class="fnt__box">
@@ -93,94 +105,139 @@
         <div class="fnt__text">
           <h3>Dégustez au restaurant</h3>
         </div>
+
+
       </div>
+    </div>
     </div>
   </div>
 
   <!--Section 3 - Restaurant-->
 
-  <div id="section3-restaurant">
+  <div class="rst">
+
+
     <div class="rst__title">
-      <h1>Restaurants</h1>
+      <h2>Restaurants</h2>
     </div>
 
-    <div class="restaurant">
-      <div class="rst__box">
-        <div class="rst__image">
-          <img src="./images/restaurants/1.jpg" alt="img.png" />
-        </div>
-        <div class="rst__text">
-          <h3>La palette du goût</h3>
-          <p>Ménilmontant</p>
-        </div>
-        <div class="rst__heart">
-          <i class="fa-thin fa-heart"></i>
-        </div>
-      </div>
 
-      <div class="rst__box">
-        <div class="rst__image">
-          <img src="./images/restaurants/2.jpg" alt="img.png" />
+    <div class="rst__select">
+
+
+
+      <div class="rst__select__box">
+        <div class="rst__select__image">
+
+          <img class="rst__select__pics" src="./images/restaurants/1.jpg" alt="img.png" />
+
         </div>
-        <div class="rst__text">
+
+<div class="rst__select__avis">
+        <div class="rst__select__text">
           <h3>La note enchantée</h3>
           <p>Charonne</p>
         </div>
-        <div class="rst__heart">
-          <i class="fa-thin fa-heart"></i>
+        <div class="rst__select__heart">
+          <i class="fa-thin fa-hand-heart"></i>
         </div>
+</div>
+
       </div>
 
-      <div class="rst__box">
-        <div class="rst__image">
-          <img src="./images/restaurants/3.jpg" alt="img.png" />
+
+      <div class="rst__select__box">
+        <div class="rst__select__image">
+
+          <img class="rst__select__pics" src="./images/restaurants/2.jpg" alt="img.png" />
+
         </div>
-        <div class="rst__text">
+
+<div class="rst__select__avis">
+        <div class="rst__select__text">
           <h3>A la française</h3>
           <p>Cité rouge</p>
         </div>
-        <div class="rst__heart">
+        <div class="rst__select__heart">
           <i class="fa-thin fa-heart"></i>
         </div>
+</div>
+
+
       </div>
 
-      <div class="rst__box">
-        <div class="rst__image">
-          <img src="./images/restaurants/4.jpg" alt="img.png" />
+
+
+
+      <div class="rst__select__box">
+        <div class="rst__select__image">
+
+          <img class="rst__select__pics" src="./images/restaurants/3.jpg" alt="img.png" />
+
         </div>
-        <div class="rst__text">
+
+        <div class="rst__select__avis">
+        <div class="rst__select__text">
+          <h3>A la française</h3>
+          <p>Cité rouge</p>
+        </div>
+        <div class="rst__select__heart">
+          <i class="fa-thin fa-heart"></i>
+        </div>
+</div>
+
+
+      </div>
+
+      <div class="rst__select__box">
+        <div class="rst__select__image">
+
+          <img class="rst__select__pics" src="/images/restaurants/4.jpg" alt="img.png" />
+
+        </div>
+
+     <div class="rst__select__avis">   
+        <div class="rst__select__text">
           <h3>Le délice des sens</h3>
           <p>Folie-Méricourt</p>
         </div>
-        <div class="rst__heart">
+        <div class="rst__select__heart">
           <i class="fa-thin fa-heart"></i>
         </div>
+</div>
+
+
       </div>
     </div>
   </div>
 
-  <footer class="footer">
-    <div class="footer__logo">
-      <img src="./images/logo/ohmyfood.png" alt="img.png" />
+  
+  <footer class="foot">
+    <div class="foot__logo">
+     <h6>ohmyfood</h6>
     </div>
 
-    <div class="footer__text">
-      <div class="footer__text__sub">
+    <div class="foot__text">
+      <div class="foot__text__sub">
+        <div class="foot__text__icon">
         <i class="fa-solid fa-utensils"></i>
-        <a class="footer__text__sub__link" href="#">Proposer un restaurant</a>
+      </div>
+        <a class="foot__text__sub__link" href="#">Proposer un restaurant</a>
       </div>
 
-      <div class="footer__text__sub">
+      <div class="foot__text__sub">
+        <div class="foot__text__icon">
         <i class="fa-solid fa-handshake-angle"></i>
-        <a class="footer__text__sub__link" href="#">Devenir partenaire</a>
+</div>
+        <a class="foot__text__sub__link" href="#">Devenir partenaire</a>
       </div>
 
-      <div class="footer__text__sub">
-        <a class="footer__text__sub__link" href="#">Mentions légales</a>
+      <div class="foot__text__sub">
+        <a href="#">Mentions légales</a>
       </div>
 
-      <div class="footer__text__sub">
-        <a class="footer__text__sub__link" href="#">Contact</a>
+      <div class="foot__text__sub">
+        <a href="#">Contact</a>
       </div>
     </div>
   </footer>

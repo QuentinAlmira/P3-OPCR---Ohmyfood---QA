@@ -1,0 +1,45 @@
+.foot{
+
+height: 200px;
+background-color: #353535;
+display: flex;
+flex-direction: column;
+padding-left: 20px;
+
+&__logo{
+    display: flex;
+    align-items: center;
+    height: 35%;
+}
+
+&__text{
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    color: white;
+    gap: 5px;
+}
+
+&__text__sub{
+    display: flex;
+    flex-direction: row;
+}
+
+&__text__icon{
+    width: 25px;
+}
+
+i{
+    font-size: 0.8em;
+}
+
+h6{
+    font-size: 1.1em;
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+}
