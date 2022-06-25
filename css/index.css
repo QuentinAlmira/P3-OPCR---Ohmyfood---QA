@@ -28,10 +28,13 @@ h3 {
   font-size: 0.9em;
 }
 
+h5 {
+  margin: 0px;
+}
+
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   height: 50px;
   width: 100%;
 }
@@ -39,9 +42,17 @@ header .header__image {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
-header .logo {
+header .header__image .logo {
   height: 25px;
+}
+header .header_arrow {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .foot {
@@ -49,12 +60,12 @@ header .logo {
   background-color: #353535;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
 }
 .foot__logo {
   display: flex;
   align-items: center;
   height: 35%;
+  padding-left: 20px;
 }
 .foot__text {
   display: flex;
@@ -62,6 +73,7 @@ header .logo {
   height: 65%;
   color: white;
   gap: 5px;
+  padding-left: 20px;
 }
 .foot__text__sub {
   display: flex;
@@ -81,6 +93,11 @@ header .logo {
   color: white;
 }
 
+footer {
+  width: 100%;
+}
+
+/*Acceuil*/
 .fnt {
   margin-top: 30px;
   margin-bottom: 40px;
@@ -100,6 +117,13 @@ header .logo {
   height: calc(90% - 15px);
   width: 100%;
   padding-left: 5px;
+}
+.fnt__menu :hover {
+  background-color: #f5edff;
+  border-radius: 20px;
+}
+.fnt__menu :hover i {
+  color: #9356dc;
 }
 .fnt__box {
   background-color: #f6f6f6;
@@ -146,6 +170,97 @@ header .logo {
   color: #7e7e7e;
 }
 
+/*Restaurant*/
+.menu {
+  height: 950px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+.menu p {
+  margin: 0px;
+  font-size: 0.8em;
+}
+.menu h4 {
+  margin: 0px;
+}
+.menu__title {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.menu__content {
+  height: 33%;
+  margin-bottom: 30px;
+}
+.menu__content__head {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 20px;
+}
+.menu__content__head__border {
+  width: 10%;
+  border-bottom: 4px solid #99e2d0;
+}
+.menu__content__plats {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.menu__content__box {
+  height: 33%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.menu__content__box__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  gap: 3px;
+}
+.menu__content__box__title h5 {
+  font-weight: bold;
+}
+.menu__content__box__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 18px;
+  padding-right: 15px;
+}
+.menu__content__box__price p {
+  font-weight: bold;
+}
+.menu__button {
+  width: 100%;
+  height: 80px;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu__button__commander {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  height: 40px;
+  width: 50%;
+  border-radius: 20px;
+  border: none;
+  margin-top: -30px;
+}
+
 .rst {
   height: 950px;
   width: 100%;
@@ -168,6 +283,7 @@ header .logo {
   gap: 15px;
 }
 .rst__select__box {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: calc(25% - 15px);
@@ -182,6 +298,22 @@ header .logo {
 .rst__select__pics {
   display: flex;
   flex: 1;
+}
+.rst__select__new {
+  height: 20px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  color: #008766;
+  font-weight: bold;
+  font-size: 0.7em;
+  border-radius: 2px;
+  position: absolute;
+  right: 5%;
+  top: 6%;
+  z-index: 1;
 }
 .rst img {
   height: 100%;
@@ -201,7 +333,7 @@ header .logo {
   height: calc(100% - 10px);
   margin-top: 10px;
   padding-left: 10px;
-  gap: 5px;
+  gap: 3px;
 }
 .rst__select__text h3 {
   font-weight: bold;
@@ -215,6 +347,7 @@ header .logo {
 .rst__select__heart {
   display: flex;
   align-items: center;
+  font-size: 1.5em;
   padding-right: 20px;
   width: auto;
 }
@@ -284,6 +417,48 @@ header .logo {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
   border: none;
   font-size: 0.7em;
+}
+
+.Headpicture {
+  height: 220px;
+  width: 100%;
+  position: relative;
+}
+.Headpicture img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.headtitle {
+  width: 100%;
+  height: 70px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px 20px 0px 0px;
+  position: absolute;
+  bottom: 0px;
+}
+.headtitle__text {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.headtitle h6 {
+  padding-left: 20px;
+  font-size: 1.2em;
+  margin: 0px;
+}
+.headtitle__heart {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */
