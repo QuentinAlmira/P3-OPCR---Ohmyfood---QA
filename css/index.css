@@ -420,23 +420,23 @@ footer {
 }
 
 .Headpicture {
-  height: 220px;
+  height: 300px;
   width: 100%;
   position: relative;
 }
 .Headpicture img {
-  height: 220px;
+  height: 300px;
   width: 100%;
   object-fit: cover;
 }
 
 .headtitle {
   width: 100%;
-  height: 70px;
+  height: 90px;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: row;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
   position: absolute;
   bottom: 0px;
 }
@@ -449,7 +449,7 @@ footer {
 }
 .headtitle h6 {
   padding-left: 20px;
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin: 0px;
 }
 .headtitle__heart {
@@ -459,6 +459,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=index.css.map */
