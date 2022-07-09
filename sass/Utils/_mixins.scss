@@ -1,1 +1,46 @@
 
+@mixin shadow-light {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@mixin text-ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin heart {
+
+    .fa-heart{
+        font-size: 25px;
+        position: absolute;
+        right: 20px;
+    }
+
+    .far{
+        opacity: 1;
+        z-index: 1;
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover{
+            opacity: 0;
+
+            + .fas{
+                opacity: 1;
+
+            }
+
+        }
+
+    }
+
+    .fas{
+    background: linear-gradient($color-primary, $color-secondary) ;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    }
+
+}
+
+

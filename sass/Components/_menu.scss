@@ -120,8 +120,11 @@ h4{
 }
 
 &__content{
-    height: 33%;
-    margin-bottom: 30px;
+    height: 33.33%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 
 } 
 
@@ -142,58 +145,92 @@ h4{
 }
 
 &__content__plats{
-
-    height: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
+    gap: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     
 }
 
 
 &__content__box{
-    height: 33%;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: white;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    height: 50%;
+    width: 95%;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    @include shadow-light;
+
+
+    &:hover .menu__content__box__check {
+        margin-right: 0px;
+    }
+
+    &:hover .menu__content__box__check .fa-solid{
+       transform: rotate(0deg);
+    }
 
 }
 
 &__content__box__title{
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 10px;
-    gap: 3px;
+    gap: 6px;
+    padding: 1rem;
+    @include text-ellipsis;
 
     h5{
         font-weight: bold;
+        @include text-ellipsis;
     }
 
-
+    p{
+        white-space: nowrap;
+        @include text-ellipsis;
+    }
 
 }
+
 
 &__content__box__price{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 18px;
-    padding-right: 15px;
+    align-items: flex-end;
+    font-size: 0.9em;
+    padding: 1rem;
+    margin-left: auto;
+    font-weight: bold;
 
-    p{
-        font-weight: bold;
-    }
-    
 
 }
+
+
+
+&__content__box__check{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    color: white;
+    cursor: pointer;
+    margin-right: -50px;
+    transition: margin-right 0.5s;
+
+    /*animation*/
+
+
+    .fa-solid {
+        transform: rotate(180deg);
+        transition: 1s;
+    }
+}
+
+
 
 &__button{
     width: 100%;

@@ -1,0 +1,414 @@
+
+.pageloader{
+    height: 100vh;
+    position: fixed;
+    z-index: 4;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    animation: loader-fade 0.2s ease-in-out both;
+    animation-delay: 4s;
+}
+
+@keyframes loader-fade{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+.loader {
+    z-index: 4;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    animation: loader 3s infinite ease-in-out;
+
+    span {
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 40px;
+        
+
+        &:nth-child(1) {
+            top: 0;
+            background-color: $lightgrey;
+            left: 0;
+            animation: B1 3s infinite ease-in-out both;
+
+            
+        }
+        &:nth-child(2) {
+            background-color: $color-secondary;
+            top: 0;
+            right: 0;
+            animation: B2 3s infinite ease-in-out both;
+        }
+        &:nth-child(3) {
+            background-color: $color-tertiary;
+            bottom: 0;
+            left: 0;
+            animation: B3 3s infinite ease-in-out both;
+        }
+        &:nth-child(4) {
+            background-color: $color-primary;
+            bottom: 0;
+            right: 0;
+            animation: B4 3s infinite ease-in-out both;
+        }
+    }
+}
+
+@keyframes loader {
+    0%{
+        width: 80px;
+        height: 80px;
+        
+    }
+
+    12%{
+        width: 150px;
+        height: 150px;
+
+    }
+
+    25% {
+        width: 80px;
+        height: 80px;
+        transform: rotate(135deg);
+    }
+
+    37%{
+        width: 150px;
+        height: 150px;
+        
+    }
+
+
+    50%{
+        width: 80px;
+        height: 80px;
+        transform: rotate(225deg);
+
+    }
+
+    62%{
+        width: 150px;
+        height: 150px;
+        
+    }
+
+    75%{
+        width: 80px;
+        height: 80px;
+        transform: rotate(315deg);
+        
+    }
+
+    87%{
+        width: 150px;
+        height: 150px;
+    }
+
+    100%{
+        width: 80px;
+        height: 80px;
+        transform: rotate(395deg);
+        
+    }
+
+
+}
+
+
+
+@keyframes B1 {
+	0%{ 
+	}
+
+    12% { 
+        border-radius: 50%;
+	}
+
+    24%{
+        background: $lightgrey;
+      
+    }
+
+    25%{
+        transform: rotate(90deg);
+        background: $color-tertiary;
+        border-radius: 0;
+    }
+
+    37%{
+        border-radius: 50%;
+    }
+
+    49%{
+        background: $color-tertiary
+       
+    }
+
+	50% {
+        transform: rotate(180deg);
+        background: $color-primary;
+        border-radius: 0;
+
+
+	}
+
+    62%{
+        border-radius: 50%;
+
+    }
+
+    74%{
+        background: $color-primary;
+
+    }
+
+    75%{
+        transform: rotate(270deg);
+        background-color: $color-secondary;
+        border-radius: 0;
+
+    }
+
+    87%{
+        border-radius: 50%;
+    }
+
+
+    99%{
+        background: $color-secondary;
+    }
+
+	100% {
+        transform: rotate(360deg);
+        background-color: $lightgrey;
+        border-radius: 0;
+
+	}
+}
+
+@keyframes B2 {
+	0%{ 
+	}
+
+    12% { 
+        border-radius: 50%;
+		
+	}
+
+    24%{
+        background: $color-secondary
+        
+    }
+
+    25%{
+        transform: rotate(90deg);
+        background: $lightgrey;
+        border-radius: 0;
+
+    }
+
+    37%{
+        border-radius: 50%;
+    }
+
+    49%{background: $lightgrey;
+    }
+
+	50% {
+        transform: rotate(180deg);
+        background-color: $color-tertiary;
+        border-radius: 0;
+
+	}
+
+    62%{
+        border-radius: 50%;
+    
+
+    }
+
+    74%{
+        background-color: $color-tertiary;
+
+    }
+
+    75%{
+        transform: rotate(270deg);
+        background-color: $color-primary;
+        border-radius: 0;
+
+    }
+
+    87%{
+        border-radius: 50%;
+
+    }
+
+
+    99%{
+        background-color: $color-primary;
+        
+    }
+
+	100% {
+        transform: rotate(360deg);
+        background-color: $color-secondary;
+        border-radius: 0;
+
+	}
+}
+
+@keyframes B3 {
+	0%{ 
+	}
+
+    12% { 
+        border-radius: 50%;
+
+	}
+
+    24%{
+        background: $color-tertiary;
+       
+    }
+
+    25%{
+        transform: rotate(90deg);
+        background-color: $color-primary;
+        border-radius: 0;
+
+    }
+
+    37%{
+        border-radius: 50%;
+
+    }
+
+    49%{
+        background-color: $color-primary;
+    
+    }
+
+	50% {
+        transform: rotate(180deg);
+        background-color: $color-secondary;
+        border-radius: 0;
+
+	}
+
+    62%{
+        border-radius: 50%;
+
+    }
+
+    74%{
+        background-color: $color-secondary;
+    }
+
+    75%{
+        transform: rotate(270deg);
+        background-color: $lightgrey;
+        border-radius: 0;
+
+    }
+
+    87%{
+        border-radius: 50%;
+    }
+
+
+    99%{
+        background-color: $lightgrey;
+    }
+
+	100% {
+        transform: rotate(360deg);
+        background-color: $color-tertiary;
+        border-radius: 0;
+
+	}
+}
+
+@keyframes B4 {
+	0%{ 
+	}
+
+    12% { 
+        border-radius: 50%;
+	}
+
+    24%{
+        background: $color-primary;
+     
+    }
+
+    25%{
+        transform: rotate(90deg);
+        background-color: $color-secondary;
+        border-radius: 0;
+
+    }
+
+    37%{
+        border-radius: 50%;
+    }
+
+    49%{
+        background-color: $color-secondary;
+       
+    }
+
+	50% {
+        transform: rotate(180deg);
+        background-color: $lightgrey;
+        border-radius: 0;
+
+	}
+
+    62%{
+        border-radius: 50%;
+
+    }
+
+    74%{
+        background-color: $lightgrey;
+    }
+
+    75%{
+        transform: rotate(270deg);
+        background-color: $color-tertiary;
+        border-radius: 0;
+
+    }
+
+    87%{
+        border-radius: 50%;
+
+    }
+
+
+    99%{
+        background-color: $color-tertiary
+    }
+
+	100% {
+        transform: rotate(360deg);
+        background-color: $color-primary;
+        border-radius: 0;
+
+	}
+}
