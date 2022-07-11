@@ -1,50 +1,4 @@
-body, html {
-  font-family: "Raleway", sans-serif;
-  font-family: "Roboto", sans-serif;
-}
-
-h6 {
-  font-family: "Shrikhand", cursive;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-body {
-  margin: 0px;
-}
-
-h1 {
-  margin: 0px;
-}
-
-h2 {
-  margin: 0px;
-}
-
-h3 {
-  font-size: 0.9em;
-}
-
-h5 {
-  margin: 0px;
-}
-
-.pageloader {
-  height: 100vh;
-  position: fixed;
-  z-index: 4;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  animation: loader-fade 0.2s ease-in-out both;
-  animation-delay: 4s;
-}
-
+/*----Loader-----*/
 @keyframes loader-fade {
   0% {
     opacity: 1;
@@ -54,44 +8,6 @@ h5 {
     z-index: -1;
   }
 }
-.loader {
-  z-index: 4;
-  width: 80px;
-  height: 80px;
-  transform: rotate(45deg);
-  animation: loader 3s infinite ease-in-out;
-}
-.loader span {
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 40px;
-}
-.loader span:nth-child(1) {
-  top: 0;
-  background-color: #f6f6f6;
-  left: 0;
-  animation: B1 3s infinite ease-in-out both;
-}
-.loader span:nth-child(2) {
-  background-color: #FF79DA;
-  top: 0;
-  right: 0;
-  animation: B2 3s infinite ease-in-out both;
-}
-.loader span:nth-child(3) {
-  background-color: #99E2D0;
-  bottom: 0;
-  left: 0;
-  animation: B3 3s infinite ease-in-out both;
-}
-.loader span:nth-child(4) {
-  background-color: #9356DC;
-  bottom: 0;
-  right: 0;
-  animation: B4 3s infinite ease-in-out both;
-}
-
 @keyframes loader {
   0% {
     width: 80px;
@@ -318,6 +234,100 @@ h5 {
     border-radius: 0;
   }
 }
+/*menu appear*/
+@keyframes menu-appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+body, html {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+h6 {
+  font-family: "Shrikhand", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+h3 {
+  font-size: 0.9em;
+}
+
+h5 {
+  margin: 0px;
+}
+
+.pageloader {
+  height: 100vh;
+  position: fixed;
+  z-index: 4;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  animation: loader-fade 0.2s ease-in-out both;
+  animation-delay: 4s;
+}
+
+.loader {
+  z-index: 4;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  animation: loader 3s infinite ease-in-out;
+}
+.loader span {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.loader span:nth-child(1) {
+  top: 0;
+  background-color: #f6f6f6;
+  left: 0;
+  animation: B1 3s infinite ease-in-out both;
+}
+.loader span:nth-child(2) {
+  background-color: #FF79DA;
+  top: 0;
+  right: 0;
+  animation: B2 3s infinite ease-in-out both;
+}
+.loader span:nth-child(3) {
+  background-color: #99E2D0;
+  bottom: 0;
+  left: 0;
+  animation: B3 3s infinite ease-in-out both;
+}
+.loader span:nth-child(4) {
+  background-color: #9356DC;
+  bottom: 0;
+  right: 0;
+  animation: B4 3s infinite ease-in-out both;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -457,7 +467,7 @@ footer {
 
 /*Restaurant*/
 .menu {
-  height: 950px;
+  height: 1000px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -477,26 +487,31 @@ footer {
 }
 .menu__content {
   height: 33.33%;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-bottom: 30px;
 }
 .menu__content__head {
   height: 15%;
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding-left: 20px;
+  padding-left: 3%;
+  animation: menu-appear 1s forwards ease;
+  transform-origin: right;
 }
 .menu__content__head__border {
   width: 10%;
   border-bottom: 4px solid #99e2d0;
 }
 .menu__content__plats {
+  height: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 20px;
   white-space: nowrap;
   overflow: hidden;
@@ -510,6 +525,8 @@ footer {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  animation: menu-appear 1s forwards ease;
+  transform-origin: left;
 }
 .menu__content__box:hover .menu__content__box__check {
   margin-right: 0px;
