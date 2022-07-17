@@ -27,18 +27,23 @@
 
             + .fas{
                 opacity: 1;
+                animation: heart-fill 0.3s linear both;
 
             }
 
         }
+
+  
 
     }
 
     .fas{
     background: linear-gradient($color-primary, $color-secondary) ;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     color: transparent;
     opacity: 0;
+    transform-origin: 50% bottom;
     }
 
 }

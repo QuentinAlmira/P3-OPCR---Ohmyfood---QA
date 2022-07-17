@@ -1,59 +1,59 @@
 
-.pageloader{
-    height: 100vh;
-    position: fixed;
-    z-index: 4;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    animation: loader-fade 0.2s ease-in-out both;
-    animation-delay: 4s;
-}
+// .pageloader{
+//     height: 100vh;
+//     position: fixed;
+//     z-index: 4;
+//     inset: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: white;
+//     animation: loader-fade 0.2s ease-in-out both;
+//     animation-delay: 4s;
+// }
 
 
 
-.loader {
-    z-index: 4;
-    width: 80px;
-    height: 80px;
-    transform: rotate(45deg);
-    animation: loader 3s infinite ease-in-out;
+// .loader {
+//     z-index: 4;
+//     width: 80px;
+//     height: 80px;
+//     transform: rotate(45deg);
+//     animation: loader 3s infinite ease-in-out;
 
-    span {
-        position: absolute;
-        display: block;
-        width: 40px;
-        height: 40px;
+//     span {
+//         position: absolute;
+//         display: block;
+//         width: 40px;
+//         height: 40px;
         
 
-        &:nth-child(1) {
-            top: 0;
-            background-color: $lightgrey;
-            left: 0;
-            animation: B1 3s infinite ease-in-out both;
+//         &:nth-child(1) {
+//             top: 0;
+//             background-color: $lightgrey;
+//             left: 0;
+//             animation: B1 3s infinite ease-in-out both;
 
             
-        }
-        &:nth-child(2) {
-            background-color: $color-secondary;
-            top: 0;
-            right: 0;
-            animation: B2 3s infinite ease-in-out both;
-        }
-        &:nth-child(3) {
-            background-color: $color-tertiary;
-            bottom: 0;
-            left: 0;
-            animation: B3 3s infinite ease-in-out both;
-        }
-        &:nth-child(4) {
-            background-color: $color-primary;
-            bottom: 0;
-            right: 0;
-            animation: B4 3s infinite ease-in-out both;
-        }
-    }
-}
+//         }
+//         &:nth-child(2) {
+//             background-color: $color-secondary;
+//             top: 0;
+//             right: 0;
+//             animation: B2 3s infinite ease-in-out both;
+//         }
+//         &:nth-child(3) {
+//             background-color: $color-tertiary;
+//             bottom: 0;
+//             left: 0;
+//             animation: B3 3s infinite ease-in-out both;
+//         }
+//         &:nth-child(4) {
+//             background-color: $color-primary;
+//             bottom: 0;
+//             right: 0;
+//             animation: B4 3s infinite ease-in-out both;
+//         }
+//     }
+// }
 

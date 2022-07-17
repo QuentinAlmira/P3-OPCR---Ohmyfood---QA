@@ -1,15 +1,24 @@
 /*Acceuil*/
 
 .fnt{
-    margin-top: 30px;
-    margin-bottom: 40px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
     width: 100%;
 
+    @media screen and (min-width: 1024px){
+        justify-content: center;
+        align-items: center;
+    }
+
+
     &__title{
-        height: 10%;
-        padding-left: 20px;
-        margin-bottom: 15px;
+
+        padding: 15px 15px 15px 20px;
+
+           @media screen and (min-width: 1024px){
+            padding: 20px 20px 20px 10%;
+    }
     }
 
     &__menu{
@@ -17,8 +26,16 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: calc(90% - 15px);
         width: 100%;
+        gap: 15px;
+
+        @media screen and (min-width: 1024px){
+            width: 80%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
 
         :hover{
             background-color: #f5edff;
@@ -27,12 +44,13 @@
                 color: #9356dc;
             }
         }
+
     
        }
 
     &__box{
         background-color: #f6f6f6;
-        height: 25%;
+        height: 60px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -40,8 +58,6 @@
         border-radius: 20px;
         width: 90%;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-        
-
 
     
     }
@@ -97,7 +113,6 @@
 
 
 .menu{
-    height: 1000px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -114,28 +129,28 @@ h4{
 }
 
 &__title{
-    height: 100px;
     display: flex;
     align-items: center;
 }
 
 &__content{
-    height: 33.33%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-bottom: 30px;
+    gap: 15px;
+    padding-bottom: 20px;
 
 } 
 
 
 &__content__head{
-    height: 15%;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding-left: 3%;
+    padding-left: 4%;
     animation: menu-appear 1s forwards ease;
     transform-origin: right;
 
@@ -143,28 +158,24 @@ h4{
 }
 
 &__content__head__border{
-    width: 10%;
+    width: 40px;
     border-bottom: 4px solid #99e2d0;
 
 }
 
 &__content__plats{
-    height: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     
 }
 
 
 &__content__box{
     background-color: white;
-    height: 50%;
+    height: 70px;
     width: 95%;
     display: flex;
     border-radius: 15px;
@@ -224,6 +235,7 @@ h4{
     align-items: center;
     background-color: #99e2d0;
     color: white;
+    font-size: 1.3em;
     cursor: pointer;
     margin-right: -50px;
     transition: margin-right 0.5s;
