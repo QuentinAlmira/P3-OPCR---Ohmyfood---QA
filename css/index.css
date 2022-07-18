@@ -453,11 +453,42 @@ footer {
 }
 
 /*Restaurant*/
+.menu-responsive {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .menu-responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.button-responsive {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .button-responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
 .menu {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #f6f6f6;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .menu p {
   margin: 0px;
@@ -560,7 +591,7 @@ footer {
 }
 .menu__content__box__check .fa-solid {
   transform: rotate(180deg);
-  transition: 1s;
+  transition: transform 0.5s ease-in-out;
 }
 .menu__button {
   width: 100%;
@@ -569,6 +600,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0;
+}
+@media screen and (min-width: 1024px) {
+  .menu__button {
+    width: 80%;
+    border-radius: 0 0 30px 30px;
+  }
 }
 .menu__button__commander {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -578,6 +616,12 @@ footer {
   border-radius: 20px;
   border: none;
   margin-top: -30px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .menu__button__commander {
+    width: 25%;
+  }
 }
 
 .rst {
@@ -786,6 +830,7 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
   border: none;
   font-size: 0.7em;
+  cursor: pointer;
 }
 
 .Headpicture {
@@ -808,6 +853,13 @@ footer {
   border-radius: 30px 30px 0px 0px;
   position: absolute;
   bottom: 0px;
+  right: 0;
+}
+@media screen and (min-width: 1024px) {
+  .headtitle {
+    width: 80%;
+    right: 10%;
+  }
 }
 .headtitle__text {
   width: 70%;
