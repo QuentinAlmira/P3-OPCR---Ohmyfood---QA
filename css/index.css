@@ -322,6 +322,11 @@ header .header_arrow {
   height: 35%;
   padding-left: 5%;
 }
+@media screen and (min-width: 1024px) {
+  .foot__logo {
+    padding-left: 10%;
+  }
+}
 .foot__text {
   display: flex;
   flex-direction: column;
@@ -329,6 +334,11 @@ header .header_arrow {
   color: white;
   gap: 5px;
   padding-left: 5%;
+}
+@media screen and (min-width: 1024px) {
+  .foot__text {
+    padding-left: 10%;
+  }
 }
 .foot__text__sub {
   display: flex;
@@ -370,7 +380,8 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   .fnt__title {
-    padding: 20px 20px 20px 10%;
+    width: 100%;
+    padding: 15px 15px 15px 20%;
   }
 }
 .fnt__menu {
@@ -576,6 +587,12 @@ footer {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 1024px) {
+  .rst {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .rst__title {
   display: flex;
   align-items: center;
@@ -583,7 +600,8 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   .rst__title {
-    padding: 20px 20px 20px 10%;
+    width: 100%;
+    padding: 15px 15px 15px 20%;
   }
 }
 .rst__select {
@@ -599,7 +617,7 @@ footer {
     width: 80%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 .rst__select__box {
@@ -614,7 +632,7 @@ footer {
 @media screen and (min-width: 1024px) {
   .rst__select__box {
     height: 200px;
-    width: calc(50% - 20px);
+    width: 48%;
   }
 }
 .rst__select__image {
