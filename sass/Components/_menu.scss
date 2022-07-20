@@ -14,12 +14,18 @@
 
     &__title{
 
-        padding: 15px 15px 15px 20px;
+        width: 100%;
 
-           @media screen and (min-width: 1024px){
-           width: 100%;
-           padding: 15px 15px 15px 20%;
+       h2{
+        padding: 15px 0 15px 5%;
+
+        @media screen and (min-width: 1024px){
+            padding: 15px 0 15px 10%;
     }
+
+       }
+
+
     }
 
     &__menu{

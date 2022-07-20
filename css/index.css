@@ -427,12 +427,14 @@ footer {
   }
 }
 .fnt__title {
-  padding: 15px 15px 15px 20px;
+  width: 100%;
+}
+.fnt__title h2 {
+  padding: 15px 0 15px 5%;
 }
 @media screen and (min-width: 1024px) {
-  .fnt__title {
-    width: 100%;
-    padding: 15px 15px 15px 20%;
+  .fnt__title h2 {
+    padding: 15px 0 15px 10%;
   }
 }
 .fnt__menu {
@@ -689,14 +691,14 @@ footer {
   }
 }
 .rst__title {
-  display: flex;
-  align-items: center;
-  padding: 15px 15px 15px 20px;
+  width: 100%;
+}
+.rst__title h2 {
+  padding: 15px 0 15px 5%;
 }
 @media screen and (min-width: 1024px) {
-  .rst__title {
-    width: 100%;
-    padding: 15px 15px 15px 20%;
+  .rst__title h2 {
+    padding: 15px 0 15px 10%;
   }
 }
 .rst__select {
