@@ -6,6 +6,11 @@
     margin-bottom: 30px;
     width: 100%;
 
+    @media screen and (min-width: 768px){
+        justify-content: center;
+        align-items: center;
+    }
+
     @media screen and (min-width: 1024px){
         justify-content: center;
         align-items: center;
@@ -18,6 +23,11 @@
 
        h2{
         padding: 15px 0 15px 5%;
+
+        @media screen and (min-width: 768px){
+            padding: 15px 0 15px 3%;
+            font-size: 1.1em;
+    }
 
         @media screen and (min-width: 1024px){
             padding: 15px 0 15px 10%;
@@ -35,6 +45,13 @@
         align-items: center;
         width: 100%;
         gap: 15px;
+
+        @media screen and (min-width: 768px){
+            width: 95%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
 
         @media screen and (min-width: 1024px){
             width: 80%;
@@ -120,22 +137,28 @@
 .menu-responsive{
     width: 100%;
 
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 768px){
         display: flex;
         flex-direction: row;
         justify-content: center;
         
     }
+
 }
 
 .button-responsive{
     
     width: 100%;
+    margin-bottom: 0;
 
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 768px){
         display: flex;
         flex-direction: row;
         justify-content: center;
+        
+    }
+
+    @media screen and (min-width: 1024px){
         margin-bottom: 30px;
         
     }
@@ -148,10 +171,14 @@
     justify-content: center;
     background-color: #f6f6f6;
 
-    @media screen and (min-width: 1024px){
-        width: 80%;
+    @media screen and (min-width: 768px){
         flex-direction: row;
         justify-content: center;
+        
+    }
+
+    @media screen and (min-width: 1024px){
+        width: 80%;
         
     }
  

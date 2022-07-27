@@ -4,11 +4,25 @@
     width: 100%;
     position: relative;
 
-    img{
-        height: 300px;
-        width: 100%;
-        object-fit: cover;
-    
+    .img{
+        height: 300px;  
+        background-size: cover;
+    }
+    .background1{
+        background-image: url("../../images/restaurants/1.jpg");
+        
+    }
+    .background2{
+        background-image: url("../../images/restaurants/2.jpg");
+        
+    }
+    .background3{
+        background-image: url("../../images/restaurants/3.jpg");
+       
+    }
+    .background4{
+        background-image: url("../../images/restaurants/4.jpg");
+       
     }
 }
 

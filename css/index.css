@@ -420,6 +420,12 @@ footer {
   margin-bottom: 30px;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .fnt {
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1024px) {
   .fnt {
     justify-content: center;
@@ -431,6 +437,12 @@ footer {
 }
 .fnt__title h2 {
   padding: 15px 0 15px 5%;
+}
+@media screen and (min-width: 768px) {
+  .fnt__title h2 {
+    padding: 15px 0 15px 3%;
+    font-size: 1.1em;
+  }
 }
 @media screen and (min-width: 1024px) {
   .fnt__title h2 {
@@ -444,6 +456,14 @@ footer {
   align-items: center;
   width: 100%;
   gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .fnt__menu {
+    width: 95%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1024px) {
   .fnt__menu {
@@ -509,7 +529,7 @@ footer {
 .menu-responsive {
   width: 100%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .menu-responsive {
     display: flex;
     flex-direction: row;
@@ -519,12 +539,17 @@ footer {
 
 .button-responsive {
   width: 100%;
+  margin-bottom: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .button-responsive {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .button-responsive {
     margin-bottom: 30px;
   }
 }
@@ -536,11 +561,15 @@ footer {
   justify-content: center;
   background-color: #f6f6f6;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1024px) {
   .menu {
     width: 80%;
-    flex-direction: row;
-    justify-content: center;
   }
 }
 .menu p {
@@ -684,6 +713,12 @@ footer {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .rst {
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1024px) {
   .rst {
     justify-content: center;
@@ -695,6 +730,11 @@ footer {
 }
 .rst__title h2 {
   padding: 15px 0 15px 5%;
+}
+@media screen and (min-width: 768px) {
+  .rst__title h2 {
+    padding: 15px 0 15px 3%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .rst__title h2 {
@@ -708,6 +748,14 @@ footer {
   justify-content: flex-start;
   width: 100%;
   gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .rst__select {
+    width: 95%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1024px) {
   .rst__select {
@@ -725,6 +773,12 @@ footer {
   width: 90%;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+@media screen and (min-width: 768px) {
+  .rst__select__box {
+    height: 200px;
+    width: calc(50% - 10px);
+  }
 }
 @media screen and (min-width: 1024px) {
   .rst__select__box {
@@ -850,6 +904,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .exp__booking {
+    height: 180px;
+  }
+}
 .exp__booking__h1 {
   display: flex;
   justify-content: center;
@@ -891,10 +950,21 @@ footer {
   width: 100%;
   position: relative;
 }
-.Headpicture img {
+.Headpicture .img {
   height: 300px;
-  width: 100%;
-  object-fit: cover;
+  background-size: cover;
+}
+.Headpicture .background1 {
+  background-image: url("../../images/restaurants/1.jpg");
+}
+.Headpicture .background2 {
+  background-image: url("../../images/restaurants/2.jpg");
+}
+.Headpicture .background3 {
+  background-image: url("../../images/restaurants/3.jpg");
+}
+.Headpicture .background4 {
+  background-image: url("../../images/restaurants/4.jpg");
 }
 
 .headtitle {
