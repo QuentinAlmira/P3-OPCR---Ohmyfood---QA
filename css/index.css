@@ -546,11 +546,13 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1024px) {
   .button-responsive {
     margin-bottom: 30px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -564,12 +566,14 @@ footer {
 @media screen and (min-width: 768px) {
   .menu {
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1024px) {
   .menu {
     width: 80%;
+    flex-wrap: nowrap;
   }
 }
 .menu p {
@@ -592,6 +596,11 @@ footer {
   text-overflow: ellipsis;
   gap: 15px;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .menu__content {
+    width: 50%;
+  }
 }
 .menu__content__head {
   display: flex;
@@ -955,16 +964,16 @@ footer {
   background-size: cover;
 }
 .Headpicture .background1 {
-  background-image: url("../../images/restaurants/1.jpg");
+  background-image: url("../images/restaurants/1.jpg");
 }
 .Headpicture .background2 {
-  background-image: url("../../images/restaurants/2.jpg");
+  background-image: url("../images/restaurants/2.jpg");
 }
 .Headpicture .background3 {
-  background-image: url("../../images/restaurants/3.jpg");
+  background-image: url("../images/restaurants/3.jpg");
 }
 .Headpicture .background4 {
-  background-image: url("../../images/restaurants/4.jpg");
+  background-image: url("../images/restaurants/4.jpg");
 }
 
 .headtitle {
